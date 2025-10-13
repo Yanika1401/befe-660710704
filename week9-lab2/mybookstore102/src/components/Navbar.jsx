@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { MenuIcon, SearchIcon, ShoppingCartIcon, UserIcon, XIcon } from '@heroicons/react/outline';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ShoppingCartIcon, SearchIcon, UserIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="h-10 w-10 bg-viridian-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="h-10 w-10 bg-green-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
               <span className="text-white font-bold text-xl">B</span>
             </div>
             <span className="text-2xl font-bold text-viridian-600 group-hover:text-viridian-700 transition-colors">

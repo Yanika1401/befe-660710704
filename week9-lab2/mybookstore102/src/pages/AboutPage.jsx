@@ -1,5 +1,3 @@
-//import React, { useState, useEffect } from 'react';
-//import { Link, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 //import BookCard from '../components/BookCard';
 //import LoadingSpinner from '../components/LoadingSpinner';
