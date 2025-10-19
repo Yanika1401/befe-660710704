@@ -1,5 +1,5 @@
 import { BookOpenIcon, LogoutIcon } from '@heroicons/react/outline';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AddBookPage = () => {
@@ -15,13 +15,13 @@ const AddBookPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
 
-  useEffect(() => {
+  /*useEffect(() => {
     // Check authentication
     const isAuthenticated = localStorage.getItem('isAdminAuthenticated');
     if (!isAuthenticated) {
       navigate('/login');
     }
-  }, [navigate]);
+  }, [navigate]);*/
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -151,7 +151,7 @@ const AddBookPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-gradient-to-r from-viridian-600 to-green-700 text-white shadow-lg">
+      <header className="bg-gradient-to-r from-green-600 to-green-700 text-white shadow-lg">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">

@@ -9,9 +9,11 @@ import NotFound from './components/NotFound';
 import AboutPage from './pages/AboutPage';
 import AddBookPage from './pages/AddBookPage';
 import BookDetailPage from './pages/BookDetailPage';
+import BookList from './pages/BookList';
 import BookListPage from './pages/BookListPage';
 import CategoryPage from './pages/CategoryPage';
 import ContactPage from './pages/ContactPage';
+import EditBookPage from './pages/EditBookPage';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 
@@ -20,7 +22,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/store-manager/books" element={<BookList />} />
         <Route path="/store-manager/add-book" element={<AddBookPage />} />
+        <Route path="/store-manager/edit-book/:id" element={<EditBookPage />} />
         <Route path="*" element={
           <div className="flex flex-col min-h-screen">
             <Navbar />
